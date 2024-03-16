@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import About from "./About";
 import Menu from "./Menu";
 import Benefit from "./Benefit";
+import Socmed from "./Socmed";
 
 class KopstudApp extends React.Component {
     render() {
@@ -14,6 +15,7 @@ class KopstudApp extends React.Component {
             <About />
             <Menu />
             <Benefit />
+            <Socmed />
             </div>
             )
     }
