@@ -5,6 +5,7 @@ import About from "./About";
 import Menu from "./Menu";
 import Benefit from "./Benefit";
 import Socmed from "./Socmed";
+import Footer from "./Footer";
 
 class KopstudApp extends React.Component {
     render() {
@@ -16,6 +17,7 @@ class KopstudApp extends React.Component {
             <Menu />
             <Benefit />
             <Socmed />
+            <Footer />
             </div>
             )
     }

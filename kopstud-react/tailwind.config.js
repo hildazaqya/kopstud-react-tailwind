@@ -10,6 +10,7 @@ export default {
         'darkbrown': '#2d2424',
         'lightbrown': '#9b8f74',
         'softbrown': ' #797160',
+        'chocobrown': '#B85C38',
       },
     },
   },
