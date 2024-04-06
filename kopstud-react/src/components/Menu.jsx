@@ -1,90 +1,90 @@
-// import React from "react";
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Navigation } from 'swiper';
-// import 'swiper/css';
+import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper';
+import 'swiper/css';
 
-// class Menu extends React.Component {
-//     render() {
-//         const menuItem = [
-//             {
-//                 imageSrc: "src/img/dcream.jpg",
-//                 title: "D'cream",
-//                 description: "Drink with a combination of coffee and fresh milk to lift your mood."
-//             },
-//             {
-//                 imageSrc: "src/img/greentea.jpg",
-//                 title: "Green tea",
-//                 description: "Drink with a mixture of sweet green tea to refresh your day."
-//             },
-//             {
-//                 imageSrc: "src/img/thaitea.jpg",
-//                 title: "Thai tea",
-//                 description: "Drink with a mixture of sweet thai tea to refresh your day."
-//             },
-//             {
-//                 imageSrc: "src/img/blacktea.jpg",
-//                 title: "Black tea",
-//                 description: "Drink with a blend of robust black tea to invigorate your senses"
-//             },
-//             {
-//                 imageSrc: "src/img/jasminetea.jpg",
-//                 title: "Jasmine Tea",
-//                 description: "Unwind with the delicate aroma of jasmine tea to soothe your soul"
-//             },
-//         ]
+class Menu extends React.Component {
+    render() {
+        const menuItem = [
+            {
+                imageSrc: "src/img/dcream.jpg",
+                title: "D'cream",
+                description: "Drink with a combination of coffee and fresh milk to lift your mood."
+            },
+            {
+                imageSrc: "src/img/greentea.jpg",
+                title: "Green tea",
+                description: "Drink with a mixture of sweet green tea to refresh your day."
+            },
+            {
+                imageSrc: "src/img/thaitea.jpg",
+                title: "Thai tea",
+                description: "Drink with a mixture of sweet thai tea to refresh your day."
+            },
+            {
+                imageSrc: "src/img/blacktea.jpg",
+                title: "Black tea",
+                description: "Drink with a blend of robust black tea to invigorate your senses"
+            },
+            {
+                imageSrc: "src/img/jasminetea.jpg",
+                title: "Jasmine Tea",
+                description: "Unwind with the delicate aroma of jasmine tea to soothe your soul"
+            },
+        ]
 
-//             const navigationNextRef = useRef(null);
-//             const navigationPrevRef = useRef(null);
+            const navigationNextRef = useRef(null);
+            const navigationPrevRef = useRef(null);
 
-//             return (
-//                 <section className="menu flex flex-col items-center justify-center pb-[50px] bg-gradient-to-b from-softbrown to-white">
-//                     <h1 className="flex flex-col items-center text-center tracking-wide text-4xl font-bold text-[#2d2424] ">
-//                         OUR MENU
-//                         <div className="bg-white w-[220px] h-[3px] flex items-center justify-center"></div>
-//                     </h1>
-//                     <div className="menu-items-all mt-[40px] max-w-[900px] flex flex-row justify-center items-center gap-[30px]">
-//                         <Swiper
-//                             modules={[Navigation]}
-//                             navigation={{
-//                                 prevEl: navigationPrevRef.current,
-//                                 nextEl: navigationNextRef.current,
-//                             }}
+            return (
+                <section className="menu flex flex-col items-center justify-center pb-[50px] bg-gradient-to-b from-softbrown to-white">
+                    <h1 className="flex flex-col items-center text-center tracking-wide text-4xl font-bold text-[#2d2424] ">
+                        OUR MENU
+                        <div className="bg-white w-[220px] h-[3px] flex items-center justify-center"></div>
+                    </h1>
+                    <div className="menu-items-all mt-[40px] max-w-[900px] flex flex-row justify-center items-center gap-[30px]">
+                        <Swiper
+                            modules={[Navigation]}
+                            navigation={{
+                                prevEl: navigationPrevRef.current,
+                                nextEl: navigationNextRef.current,
+                            }}
 
-//                             onBeforeInit={(swiper) => {
-//                                 swiper.navigation.nextEl = navigationNextRef.current;
-//                                 swiper.navigation.prevEl = navigationPrevRef.current;
-//                             }}
-//                             spaceBetween={50}
-//                             slidesPerView={3}
-//                             onSlideChange={() => console.log('slide change')}
-//                             onSwiper={(swiper) => console.log(swiper)}
-//                         >
-//                             <button ref={navigationPrevRef} className="swipe-left">
-//                                 <img src="src/img/chevron-left.png" alt="left" className="w-[70px]" />
-//                             </button>
-//                             {menuItem.map((item, index) => (
-//                                 <SwiperSlide key={index}>
-//                                     <div className="item-menu flex flex-col items-center justify-center !w-[250px] !h-[350px] bg-white p-4 rounded-3xl shadow-md mb-[20px]">
-//                                         <div className="image max-h-[220px] overflow-hidden rounded-xl">
-//                                             <img src={item.imageSrc} alt={item.title} className="w-[200px] object-contain" />
-//                                         </div>
-//                                         <div className="description text-justify">
-//                                             <h3 className="mt-[15px] text-[#B85C38] tracking-wide text-xl font-bold">{item.title}</h3>
-//                                             <p className="text-[#2d2424] text-base tracking-wide font-normal">
-//                                                 {item.description}
-//                                             </p>
-//                                         </div>
-//                                     </div>
-//                                 </SwiperSlide>
-//                             ))}
-//                             <button ref={navigationNextRef} className="swipe-right">
-//                                 <img src="src/img/chevron-left.png" alt="right" className="w-[70px] transform rotate-180" />
-//                             </button>
-//                         </Swiper>
-//                     </div>
-//                 </section>
-//             )
-//     }
-// }
+                            onBeforeInit={(swiper) => {
+                                swiper.navigation.nextEl = navigationNextRef.current;
+                                swiper.navigation.prevEl = navigationPrevRef.current;
+                            }}
+                            spaceBetween={50}
+                            slidesPerView={3}
+                            onSlideChange={() => console.log('slide change')}
+                            onSwiper={(swiper) => console.log(swiper)}
+                        >
+                            <button ref={navigationPrevRef} className="swipe-left">
+                                <img src="src/img/chevron-left.png" alt="left" className="w-[70px]" />
+                            </button>
+                            {menuItem.map((item, index) => (
+                                <SwiperSlide key={index}>
+                                    <div className="item-menu flex flex-col items-center justify-center !w-[250px] !h-[350px] bg-glass p-4 rounded-3xl shadow-md mb-[20px]">
+                                        <div className="image max-h-[220px] overflow-hidden rounded-xl">
+                                            <img src={item.imageSrc} alt={item.title} className="w-[200px] object-contain" />
+                                        </div>
+                                        <div className="description text-justify">
+                                            <h3 className="mt-[15px] text-[#B85C38] tracking-wide text-xl font-bold">{item.title}</h3>
+                                            <p className="text-[#2d2424] text-base tracking-wide font-normal">
+                                                {item.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                            <button ref={navigationNextRef} className="swipe-right">
+                                <img src="src/img/chevron-left.png" alt="right" className="w-[70px] transform rotate-180" />
+                            </button>
+                        </Swiper>
+                    </div>
+                </section>
+            )
+    }
+}
 
-// export default Menu;
+export default Menu;
