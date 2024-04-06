@@ -12,6 +12,9 @@ export default {
         'softbrown': ' #797160',
         'chocobrown': '#B85C38',
       },
+      boxShadow: {
+       'card': '0 3px 10px rgba(0, 0, 0, 0.3)',
+      }
     },
   },
   plugins: [],
