@@ -39,15 +39,24 @@ class Menu extends React.Component {
                     OUR MENU
                     <div className="bg-white w-[220px] h-[3px] flex items-center justify-center"></div>
                 </h1>
-                <div className="menu-items-all mt-[40px] max-w-[900px] flex flex-row justify-center items-center gap-[30px]">
-                    <button className="swipe-left">
+                <div className="menu-items-all mt-[40px] max-w-[900px] lg:flex flex-row justify-center items-center gap-[30px]">
+                    <button className="swipe-left hidden lg:block">
                         <img src="src/img/chevron-left.png" alt="left" className="w-[70px]" />
                     </button>
                     <Swiper
                         spaceBetween={50}
                         slidesPerView={3}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
+                        // onSlideChange={() => console.log('slide change')}
+                        // onSwiper={(swiper) => console.log(swiper)}
+                        breakpoints={{
+                            // 768: {
+                            //     slidesPerView: 2
+                            // },
+                            800: {
+                                slidesPerView: 3
+                            }
+                        }
+                        }
                     >
                         {menuItem.map((item, index) => (
                             <SwiperSlide key={index}>
@@ -65,7 +74,7 @@ class Menu extends React.Component {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                    <button className="swipe-right">
+                    <button className="swipe-right hidden lg:block">
                         <img src="src/img/chevron-left.png" alt="right" className="w-[70px] transform rotate-180" />
                     </button>
                 </div>

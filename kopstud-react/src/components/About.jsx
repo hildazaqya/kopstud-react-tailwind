@@ -8,7 +8,7 @@ class About extends React.Component {
                     About Us
                     <div className="line h-[3px] w-[50px] ms-[25px] bg-[#ffff]"> </div>
                 </h1>
-                <div className="about-items flex flex-row items-center justify-center gap-[40px] pt-3">
+                <div className="about-items flex lg:flex-row flex-col items-center justify-center gap-[40px] pt-3">
                     <aside>
                         <img src="src/img/coffeeshop-place.jpg" alt="coffeeshop place" className="rounded-full max-w-[300px]" />
                     </aside>

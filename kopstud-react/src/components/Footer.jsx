@@ -4,7 +4,7 @@ class Footer extends React.Component {
     render() {
         return (
             <footer className="flex flex-col bg-[#2d2424] pt-[30px] pb-p-[10px] tracking-wide">
-                <div className="flex items-center justify-around gap-[30px]">
+                <div className="flex justify-around gap-[30px] p-[30px] flex-col lg:flex-row lg:items-center">
                     <div className="max-w-[400px]">
                         <h1 className="text-left text-3xl font-bold text-[#E0C097] ">
                             Kopi Studio 20

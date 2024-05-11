@@ -30,7 +30,7 @@ class Benefit extends React.Component {
                     TAKE US WITH YOU
                     <div className="bg-[#797160] w-[250px] h-[3px] flex items-center justify-center"></div>
                 </h1>
-                <div className="benefit-items mt-[40px] grid grid-cols-4 justify-center items-center gap-[30px]">
+                <div className="benefit-items mt-[40px] grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-[30px]">
                     {benefitItem.map((item,index) => (
                     <div className="max-w-[220px] h-[300px] flex flex-col items-center justify-center mb-[20px] tracking-wide overflow-hidden p-[16px]" key={index}>
                     <img className="h-[100px]" src={item.imageSrc} alt={item.title}></img>

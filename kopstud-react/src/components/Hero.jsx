@@ -3,9 +3,9 @@ import React from "react";
 class Hero extends React.Component {
   render() {
     return (
-      <section className="hero flex flex-row justify-around items-center px-[25px] py-[70px] gap-[150px] bg-gradient-to-b from-darkbrown to-lightbrown">
-        <div className="flex flex-col justify-center gap-y-[10px]">
-          <h1 className="text-[45px] text-[#ffff] tracking-wide font-bold">
+      <section className="hero flex flex-col lg:flex-row justify-around items-center px-[25px] py-[70px] gap-[75px] lg:gap-[150px] bg-gradient-to-b from-darkbrown to-lightbrown">
+        <div className="flex flex-col items-center justify-center lg:items-start gap-y-[10px]">
+          <h1 className="text-[45px] text-[#ffff] tracking-wide font-bold text-center lg:text-left">
             For a delicious <br />
             and refreshing <br />
             coffee experience, <br />

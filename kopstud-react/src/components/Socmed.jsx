@@ -37,7 +37,7 @@ class Socmed extends React.Component {
             <div className="bg-white w-[250px] h-[3px] flex items-center justify-center"></div>
           </h1>
         </div>
-        <div className="grid mt-[40px] grid-cols-4 justify-center">
+        <div className="grid mt-[40px] grid-cols-2 lg:grid-cols-4 justify-center">
           {socmedItem.map((item, index) => (
             <div
               key={index}
